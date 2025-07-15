@@ -1,0 +1,68 @@
+.goalCard {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 8px;
+  margin-bottom: 10px;
+
+  .goalCard-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+  .body {
+    margin: 10px;
+
+    p {
+      height: 65px;
+      overflow: auto;
+      scrollbar-width: none;
+    }
+
+    p::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .datas {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+  }
+
+  .tasks {
+    margin: 0 10px 0 10px;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .tasks-list {
+      height: 100px;
+      overflow: auto;
+      scrollbar-width: none;
+    }
+
+    .tasks-list::-webkit-scrollbar {
+      display: none;
+    }
+
+  }
+}
+
+@media (max-width: 600px) {
+  .goalCard {
+    width: 300px;
+  }
+}
+
+@media (min-width: 921px) {
+  .goalCard {
+    width: 453px;
+    margin-bottom: 0;
+  }
+}

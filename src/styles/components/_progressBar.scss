@@ -1,0 +1,30 @@
+.progress-bar-container {
+  margin-top: 1rem;
+  z-index: 1;
+
+  .bar-background {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    height: 20px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+
+    .bar-fill {
+      background-color: #4285F4;
+      height: 100%;
+      border-radius: 4px;
+      transition: width 0.5s ease-in-out;
+      position: relative;
+    }
+
+    .progress-text {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: bolder;
+      user-select: none;
+    }
+  }
+}

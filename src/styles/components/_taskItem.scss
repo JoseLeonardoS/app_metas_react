@@ -1,0 +1,20 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 2px;
+
+  .buttons {
+    opacity: 0;
+  }
+}
+
+.task-item:hover {
+  background-color: lightgray;
+  border-radius: 4px;
+
+  .buttons {
+    opacity: 1;
+  }
+}

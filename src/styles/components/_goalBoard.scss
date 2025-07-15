@@ -1,0 +1,49 @@
+.goal-board {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 8px;
+  width: 600px;
+  margin: 50px 0 20px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 28px;
+    font-weight: bolder;
+    margin: 0 20px 0 20px;
+
+    button {
+      border: none;
+      height: 20px;
+      height: 30px;
+      color: white;
+      background-color: #4285F4;
+      border-radius: 4px;
+      transition: .2s;
+    }
+
+    button:hover {
+      background-color: #286ddb;
+    }
+  }
+
+  .text {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 20px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .goal-board {
+    width: 300px;
+  }
+}
+
+@media (min-width: 921px) {
+  .goal-board {
+    width: 920px;
+  }
+}

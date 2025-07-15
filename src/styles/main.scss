@@ -1,0 +1,35 @@
+@use './components/loadicon.scss';
+
+@use 'pages/dashboard';
+
+@use 'components/progressBar';
+@use 'components/goalBoard';
+@use 'components/goalCard';
+@use 'components/modal';
+@use 'components/addGoalModal';
+@use 'components/updateGoalModal';
+@use 'components/addTaskModal';
+@use 'components/taskItem';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.material-icons {
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+}
+
+.material-icons-outlined {
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+}
