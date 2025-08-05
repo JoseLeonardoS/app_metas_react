@@ -18,7 +18,7 @@ function AddTask({ id, onUpdate, updtGoals, open }) {
     api.post("/Task/criar", task)
       .then(() => {
         setTitle("")
-        close(false)
+        open(false)
         onUpdate()
         updtGoals()
       })
